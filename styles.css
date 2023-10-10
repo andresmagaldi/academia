@@ -1,0 +1,341 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;    
+}
+
+header h1{
+    font-size: 36px;
+    width: 250px;
+    text-align: center;
+    margin: 40px auto 20px auto;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+nav a: hover{
+    color: #ff6600;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+/* Estilos para el menú deslizable */
+#menu-deslizable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Color de fondo del menú */
+}
+
+.item {
+    text-align: center;
+    margin: 20px;
+    position: relative; /* Posición relativa para los elementos */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+.item img {
+    width: 400px; /* Ancho de las imágenes */
+    height: auto;
+    border: 1px solid #ddd; /* Borde alrededor de las imágenes */
+    border-radius: 5px;
+}
+
+.item .info {
+    display: none; /* Oculta la información por defecto */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    padding: 10px;
+    bottom: -30px; /* Posición para mostrar el texto debajo de la imagen */
+    left: 0;
+    right: 0;
+    transform: translateY(100%); /* Inicialmente fuera de la vista */
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+/* Mostrar información al pasar el ratón sobre el elemento */
+.item:hover .info {
+    display: block; /* Mostrar el texto al pasar el ratón */
+    transform: translateY(0);
+}
+
+#cursos { 
+h3, p
+    color: white;
+}
+
+#cursos{ 
+    background-color: #3498db; /* Color de fondo */
+    display: flex; /* Utilizar flexbox para organizar contenido */
+    flex-direction: row; /* Apilar elementos verticalmente */
+    align-items: center; /* Centrar elementos horizontalmente */
+    justify-content: flex-start; /* Alinear elementos en la parte superior */
+    padding: 50px 0; /* Espaciado interno */
+}
+
+
+.curso {
+    flex: 1;
+    text-align: center;
+}
+
+.curso img{
+    transition: transform 1s ease;
+}
+
+.curso:hover{
+    transform: scale(1.1);
+}
+
+.cursos-header {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(43, 32, 197);
+}
+
+.cursos-header h2,
+.cursos-header p {
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+.accordion {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+    background: linear-gradient( #fff, #fefefe, #eaeaea);
+}
+
+.evento {
+    max-width: 990px;
+    background: rgba(0, 0, 0, 0.10);
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 100px;    
+}
+
+.box {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    background-position: left;
+    background-size: cover;
+    transition: 5s ease;
+    box-shadow; 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+
+.box:hover {
+    flex: 7;
+    height: 400px;
+}
+
+.a1 {
+    background-image: 
+    url("https://i.ytimg.com/vi/wIZgvVDZc2Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBasTPJ8vmBnoWfFQ7S8HZ_rTo66w");
+}
+
+.a2 {
+    background-image: 
+    url("https://www.robotix.es/img/cms/FLL/FIRST-LEGO-LEAGE-CHALLENGE.jpg");
+}
+
+.a3 {
+    background-image: 
+    url("https://www.makex.cc/wp-content/uploads/2021/09/banner.jpg");
+}
+
+.a4 {
+    background-image: 
+    url("https://static.wixstatic.com/media/6d5b25_7e0140790d8649aea66865bf822b77b0~mv2.jpg/v1/fill/w_624,h_426,al_c,lg_1,q_80,enc_auto/RJ%20Glam.jpg");
+}
+
+.a5 {
+    background-image: 
+    url("https://img1.wsimg.com/isteam/ip/f078a04c-429a-42ae-a9f8-37a183361a68/TORNEO%20DE%20ROBOTICA_Mesa%20de%20trabajo%201.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:388,h:388,cg:true");
+}
+
+
+.a6 {
+    background-image: 
+    url("https://www.pascualbravo.edu.co/expotecnologica/wp-content/uploads/2021/09/Banner-Expotecnolo%CC%81gica-2023.jpg");
+}
+
+p {
+    font-weight: normal;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(70, 110, 219);
+}
+
+.info-evento {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    padding: 10px
+}
+
+.box:hover .info-evento{
+    opacity: 1;
+}
+
+h1 {
+    width: 250px;
+    text-align: center;
+    margin: 100px auto 20px auto;
+    color: #333;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        margin: 0;
+    }
+    .accordion {
+        flex-direction: row;
+        height: 700px;
+        box-shadow: none;
+    }
+    .box {
+        box-shadow: none;
+    }
+    .box:hover {
+        flex: 7;
+    }
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #3498db; /* Color de fondo */
+    padding: 50px 0; /* Espaciado interno */
+    text-align: center; /* Centrar contenido horizontalmente */
+    color: white; /* Color de texto */
+}
+
+.contacto-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contacto-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form {
+    text-align: left; /* Alineación del formulario a la izquierda */
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+button {
+    background-color: #ff5733; /* Color de fondo del botón */
+    color: white; /* Color de texto del botón */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e63c20; /* Cambio de color en hover */
+}
+
+/* Estilos para el menú de Registro o Inscripción */
+#registro {
+    background-color: #333; /* Color de fondo del menú */
+    padding: 10px 0; /* Espaciado interno */
+    text-align: center; /* Centrar contenido horizontalmente */
+}
+
+#registro ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#registro li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#registro a {
+    text-decoration: none;
+    color: #fff; /* Color de texto de los enlaces */
+    font-size: 16px;
+}
+
+#registro a:hover {
+    text-decoration: underline; /* Subrayar en hover */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white; /* Color de texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Centrar contenido horizontalmente */
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.credits {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.contact-info p,
+.credits p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.credits p {
+    font-size: 12px;
+}
